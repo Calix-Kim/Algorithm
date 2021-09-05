@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 
+// Get an idea from "https://www.careercup.com/question?id=5692261441470464"
+
 void changeCount2(std::vector<int> coins, std::vector<int> counts, int amount) {
 
 	int coin_num = coins.size();
@@ -46,13 +48,6 @@ void changeCount2(std::vector<int> coins, std::vector<int> counts, int amount) {
 
 		// Update lastComb vector
 		std::copy(curComb.begin(), curComb.end(), lastComb.begin());
-	}
-
-	for (int i = 0; i <= coin_num; i++) {
-		for (int j = 0; j <= amount; j++) {
-			std::cout << dp[i][j] << " ";
-		}
-		std::cout << "\n";
 	}
 
 	std::cout << "Available Count : " << dp[coin_num][amount] << std::endl;

@@ -42,13 +42,10 @@ void changeCount(std::vector<int> coins, std::vector<int> counts, int n) {
 				else
 					comb_v[j].push_back(temp_v[k]);
 			}
-
-			std::cout << dp[j] << " ";
 		}
 
 		// Update the last dp vector
 		std::copy(dp.begin(), dp.end(), dpLast.begin());
-		std::cout << std::endl;
 	}
 
 	std::cout << "Available Count : " << dp[n] << std::endl;
