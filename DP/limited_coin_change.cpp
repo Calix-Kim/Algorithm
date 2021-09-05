@@ -62,6 +62,4 @@ void changeCount(std::vector<int> coins, std::vector<int> counts, int n) {
 		}
 		std::cout << std::endl;
 	}
-
-	std::cout << std::endl;
 }
